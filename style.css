@@ -1,0 +1,1144 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+   display: block;
+}
+
+
+header{
+    background-color: #070707;
+   
+}
+.navbar{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+h1 a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    font-family: 'Post No Bills Jaffna', sans-serif;
+    font-size:30px;
+    color: rgb(255, 255, 255);
+    z-index: 1000;
+    
+}
+h2{
+    font-size:17px;
+    letter-spacing: 3px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    z-index: 1000;
+    max-width:100px;
+    
+    
+}
+h2 a {
+text-decoration: none;
+color: white;
+}
+
+   
+
+:root{
+   font-family: "Raleway", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+}
+
+*{
+   margin: 0;
+   box-sizing: border-box;
+}
+
+/* carousel */
+.carousel_inner{
+   width: 100%;
+   z-index: 1000;
+}
+
+.carousel_inner::after{
+   content: "";
+   display: block;
+   clear: both;
+}
+
+.carousel_item{
+   position: relative;
+   float: left;
+   display: none;
+   width: 100%;
+   margin-right: -100%;
+}
+
+/* slide effect */
+.carousel_item__active,
+.carousel_item__pos_next{
+   display: block;
+}
+
+.carousel_item__pos_next{
+   left: 100%;
+}
+
+.carousel_item__next{
+   transform: translateX(-100%);
+   transition: transform .5s ease-in-out;
+}
+
+/* fade effect */
+.carousel__fade .carousel_item__pos_next{
+   left: 0;
+   opacity: 0;
+}
+
+.carousel__fade .carousel_item__next{
+   transform: none;
+   opacity: 1;
+   transition: opacity .5s ease-in-out;
+}
+
+.carousel__fade .carousel_item__active.carousel_item__next{
+   opacity: 0;
+}
+
+/* carousel */
+.carousel_img{
+   display: block;
+   width: 50%;
+   position: relative;
+   left:30%;
+   bottom:90px;
+   z-index: 1000;
+    
+}
+
+.carousel_caption{
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+   height: 100%;
+   padding: 3rem 2.5rem;
+   text-align: center;
+   color: #fff;
+   z-index: 1;
+}
+
+.carousel_title{
+   font-family: "Montserrat", sans-serif;
+   font-weight: 600;
+}
+
+.carousel_description{
+   margin-top: .75rem;
+   line-height: 150%;
+}
+.info{
+   position: relative;
+   bottom:24rem;
+   left: 15%;
+   z-index:1000;
+   display: block;
+   width:100vh;
+   animation: info 0.5  s ease-in-out ;
+    
+ 
+}
+@keyframes info{
+   from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  
+}
+.info h1{
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 5px;
+    
+}
+.info h2{
+   font-family: 'Roboto', sans-serif;
+   font-size: 60px;
+}
+.info h3{
+   font-size:30px;
+   color:#9C9C9C;
+   position: relative;
+   top: 10px;
+}
+.info p{
+   font-size: 20px;
+   color: white;
+   position: relative;
+   top: 25px;
+   font-family: 'Roboto', sans-serif;
+}
+#start-btn{
+   height: 60px;
+   width: 400px;
+   box-shadow: 0 0 25px rgb(255 53 77 / 57%);
+   opacity: .95;
+   border: none;
+   background-color: #E72150;
+   border-radius: 5px;
+   color: white;
+   font-family: 'Quicksand', sans-serif;
+   font-size: 20px;
+   cursor: pointer;
+   transition: all .2;
+   outline: none;
+   position: relative;
+   bottom: 50px;
+   
+   
+}
+
+#start-btn a {
+text-decoration: none;
+color: white;
+}
+.btn{
+   height:150px;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap; 
+   align-items: center;
+  
+
+}
+.sections{
+   background-color:#F1F4FE;
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+   height:28rem;
+   
+}
+.coach-section{
+   display: flex;
+   
+}
+.coach-content{
+   display: flex;
+   flex-direction: column;
+   margin-top: 40px;
+   padding-left:50px;
+   
+}
+.coach-content h1{
+ color: black;
+ font-family: 'Roboto', sans-serif;
+ font-size: 40px;
+ 
+ 
+}
+
+.coach-content p{
+   font-family: 'Quicksand', sans-serif;
+   font-size:18px;
+   margin-top: 20px;
+   line-height:160%;
+   
+}
+#training-btn{
+   background-color: #E72150;
+   color: white;
+   border:  solid #E72150;
+   border-radius: 5px;
+   font-family: 'Quicksand', sans-serif;
+   height: 45px;
+   width: 65%;
+   margin-top:70px;
+}
+.trust-content{
+   display: flex;
+  
+}
+
+.elite-coaches{ 
+ display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 55px;
+margin-right:10rem;
+}
+.trust-pic{
+   margin-top: 55px;
+}
+
+.trust-pic h2{
+   color: black;
+   
+   
+}
+#stars{
+   margin-left: 20px;
+}
+.line{
+   height:50px;
+   width: 1px;
+   background-color: #9C9C9C;
+   margin-top: 50px;
+   margin-right: 8rem;
+   
+}
+.pro-section{
+   width:100%;
+
+}
+ #prop{
+   color: black;
+   font-size: 20px;
+   font-family: 'Quicksand', sans-serif;
+   text-align: center;
+   margin-left:35px;
+   margin-top: 20px;
+}
+.pro-section{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-top:100px;
+   position: relative;
+   top:30px;
+   width:100%;
+   height: 25rem;
+   justify-content: space-evenly;
+   
+}
+#imp{
+   position: relative;
+   left: 5px;
+   font-family: 'Quicksand';
+   margin-top: 10px;
+   font-size:25px;
+}
+#double{
+   position: relative;
+   left:10px;
+   font-family: 'Quicksand';
+   margin-top: 10px;
+   font-size:25px;
+}
+#tenz{
+   position: relative;
+   left:45px;
+   font-family: 'Quicksand';
+   margin-top: 10px;
+   font-size:25px;
+}
+footer{
+   background-color: black;
+   display: flex;
+   height:20rem;
+  
+   
+}
+.youtube{
+   display: flex;
+
+}
+.youtube img{
+   height:30px;
+   width: 30px;
+   margin-top:25.5px;
+   margin-right: 10px;
+}
+.insta{
+   display: flex;
+
+}
+.insta img{
+   height:30px;
+   width: 30px;
+   margin-top:25.5px;
+   margin-right: 10px;
+}
+.twitter{
+   display: flex;
+
+}
+.twitter img{
+   height:30px;
+   width: 30px;
+   margin-top:25.5px;
+   margin-right: 10px;
+}
+.facebook{
+   display: flex;
+
+}
+.facebook img{
+   height:30px;
+   width: 30px;
+   margin-top:25.5px;
+   margin-right: 10px;
+}
+footer img{
+   height:60px;
+   width: 70px;
+   display: flex;
+
+}
+
+.icons{
+   position: relative;
+   top: 30px;
+}
+.icons img {
+   height: 20px;
+   width: 20px;
+   margin-top:10px;
+   
+}
+.company-info{
+   color: white;
+   font-family: 'Roboto', sans-serif;
+   list-style: none;
+   padding-left:9rem;
+   margin-top: 20px;
+}
+footer li{
+ margin-top: 10px;
+}
+#Quicksand{
+   font-family: 'Quicksand', sans-serif; 
+   color: white;
+   position: relative;
+   top: 20px;
+}
+.games{
+   margin-top: 20px;
+   padding-left:35rem;
+}
+#games{
+   color: white;
+   list-style: none;
+}
+#lol{
+   color: white;
+   font-family: 'Quicksand', sans-serif; 
+   list-style: none;
+   padding-left:40px;
+   position: relative;
+   top: 20px;
+}
+#lolimg{
+   height: 20px;
+   width: 20px; 
+
+}
+.social{
+   margin-top: 20px;
+   padding-left: 30rem;
+}
+.social li{
+   color: white;
+   list-style: none;
+}
+#yt{
+   color: white;
+   padding-right: 20px;
+}
+@media only screen and  (max-width:1300px) {
+   h1 a {
+     font-size: 20px;
+  }
+  #username{
+     color:#F1F4FE;
+     z-index: 1000;
+     position: relative;
+     bottom:50px;
+     font-family: 'Roboto', sans-serif;
+     font-size:15px;
+     
+ }
+ #logout a {
+     text-decoration: none;
+     color: white;
+     font-family: 'Quicksand', sans-serif;
+ }
+ #logout{
+     background-color: #E72150;
+     border:  solid #E72150 ;
+     border-radius: 5px;
+     width:5rem;
+     z-index:1000;
+ }
+ .username{
+     display: flex;
+     justify-content: flex-end;
+     position: relative;
+     right:130px;
+ }
+ .avatar{
+ height: 40px;
+ width: 40px;
+ position: relative;
+ right:25px;
+ bottom:55px;
+ cursor: pointer;
+ z-index: 1000;
+ }
+ .info{
+  position: relative;
+  bottom:15rem;
+  left: 15%;
+  z-index:1000;
+  width:50vh;
+}
+footer{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:40rem;
+ 
+  
+}
+#zlogo{
+  height:80px;
+  width: 80px;
+}
+
+.icons img {
+  height: 20px;
+  width: 20px;
+  margin-top:10px;
+  
+}
+.company-info{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  bottom: 7rem;
+  font-size:20px;
+  margin-right:10rem;
+}
+footer li{
+margin-top: 10px;
+}
+#Quicksand{
+  font-family: 'Quicksand', sans-serif; 
+  color: white;
+  position: relative;
+  top: 20px;
+}
+.social{
+  display:grid;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding-left: 0px;
+ 
+}
+
+#social{
+  font-size: 20px;
+}
+#lol {
+  display: none;
+}
+#games{
+  display: none;
+}
+#lolimg{
+  display: none;
+}
+
+.youtube{
+  width: 30%;
+}
+.insta{
+  width: 30%;
+}
+.twitter{
+  width: 30%;
+}
+.facebook{
+  width: 30%;
+}
+
+
+}
+@media only screen and  (max-width:1200px) {
+  .carousel_img{
+     display: block;
+     width:60%;
+     position: relative;
+     left:30%;
+     bottom:120px;
+  }
+  .info  {
+  position: relative;
+  bottom:20rem;
+  left: 15%;
+  z-index:1000;
+  
+}
+.info h1 {
+  font-size: 15px;
+}
+.info h2{
+  font-size: 30px;
+}
+.info h3{
+  font-size: 20px;
+}
+.info p{
+  font-size: 15px
+}
+
+  
+      
+  }
+@media only screen and  (max-width:800px) {
+
+  .sections{
+     background-color:#F1F4FE;
+     display: block;
+     align-items:center;
+     height:35rem;
+     
+  }
+  .coach-section{
+     display: block;
+     
+  }
+  .coach-section img{
+     width: 50%;
+     position: relative;
+     left: 23%;
+  }
+  .coach-content{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+     
+  }
+  .coach-content h1{
+   color: black;
+   font-family: 'Roboto', sans-serif;
+   font-size:30px;
+   position: relative;
+   right:30px;
+   
+  }
+  .coach-content p{
+     font-family: 'Quicksand', sans-serif;
+     font-size:15px;
+     margin-top: 20px;
+     line-height:160%;
+     position: relative;
+     right:30px;
+  }
+  #training-btn{
+     background-color: #E72150;
+     color: white;
+     border:  solid #E72150;
+     border-radius: 5px;
+     font-family: 'Quicksand', sans-serif;
+     height: 45px;
+     width: 65%;
+     position: relative;
+     left: 80px;
+     bottom:3rem;
+   
+  }
+  .trust-content{
+     display: flex;
+    
+  }
+  
+  .elite-coaches{ 
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 5rem;
+  left: 50px;
+  font-size: 15px;
+  
+  }
+  .line{
+     position: relative;
+     bottom: 5rem;
+     right: 20px;
+  }
+  
+  .trust-pic{
+     position: relative;
+     bottom: 5rem;
+     right:50px;
+  }
+  
+  .trust-pic p{
+     color: black;
+     font-size:15px;
+     
+     
+  }
+
+
+  }
+  @media only screen and  (max-width:550px) {
+     .sections{
+        background-color:#F1F4FE;
+        display: block;
+        align-items:center;
+        height:45rem;
+        
+     }
+     .coach-section{
+        display: block;
+        
+     }
+     .coach-section img{
+        width:70%;
+        position: relative;
+        left:15%;
+     }
+     .coach-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        
+     }
+     .coach-content h1{
+      color: black;
+      font-family: 'Roboto', sans-serif;
+      font-size:30px;
+      position: relative;
+      right:30px;
+      
+     }
+     .coach-content p{
+        font-family: 'Quicksand', sans-serif;
+        font-size:15px;
+        margin-top: 20px;
+        line-height:160%;
+        position: relative;
+        right:30px;
+     }
+     #training-btn{
+        background-color: #E72150;
+        color: white;
+        border:  solid #E72150;
+        border-radius: 5px;
+        font-family: 'Quicksand', sans-serif;
+        height: 45px;
+        width: 65%;
+        position: relative;
+        left: 65px;
+        bottom:3rem;
+      
+     }
+     .trust-content{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+       
+     }
+     
+     .elite-coaches{ 
+      display: flex;
+     flex-direction: column;
+     align-items: center;
+     position: relative;
+     bottom: 5rem;
+     left:75px;
+     font-size: 15px;
+     
+     }
+     .line{
+       display: none;
+     }
+     
+     .trust-pic{
+        position: relative;
+        left: 12rem;
+      
+        
+     }
+     
+     .trust-pic p{
+        color: black;
+        font-size:15px;
+        
+        
+     }
+   
+  }
+
+
+  @media only screen and  (max-width:700px) {
+     h1 a {
+        font-size: 20px;
+        z-index:1000;
+     }
+     .carousel_img{
+        display: block;
+        width:100%;
+        position: relative;
+         left:1rem;
+        bottom:120px;
+     
+         
+     }
+     .info{
+        position: relative;
+        bottom:5rem;
+        left: 15%;
+        z-index:1000;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width:50vh;
+  }
+  .info h1{
+     color: red;
+     font-family: 'Roboto', sans-serif;
+     font-style: normal;
+     font-weight: 700;
+     font-size:15px;
+     
+     
+ }
+ .info h2{
+    font-family: 'Roboto', sans-serif;
+    font-size:30px;
+    position: relative;
+    left:30%;
+ }
+ .info h3{
+    font-size:20px;
+    color:#9C9C9C;
+    
+    
+ }
+ .info p{
+    font-size:15px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+ }
+ #start-btn{
+  height: 60px;
+  width: 90%;
+  box-shadow: 0 0 25px rgb(255 53 77 / 57%);
+  opacity: .95;
+  border: none;
+  background-color: #E72150;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .2;
+  outline: none;
+  position: relative;
+  bottom: 10px;
+  
+}
+.pro-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width:100%;
+  height:40rem;
+ 
+  
+}
+.imp{
+  text-align: center;
+  position: relative;
+  bottom:150px;
+  
+}
+.imp img {
+  height: 110px;
+  width: 110px;
+}
+#imp  {
+  font-size: 15px;
+}
+.double{
+  text-align: center;
+  position: relative;
+  bottom:100px;
+}
+.double img {
+  height: 110px;
+  width: 110px;
+}
+#double {
+  font-size: 15px;
+  position: relative;
+  left:-2px;
+}
+.tenz{
+  text-align: center;
+  position: relative;
+  bottom: 30px;
+  
+}
+.tenz img {
+  height: 110px;
+  width: 110px;
+}
+#tenz {
+  font-size: 15px;
+  position: relative;
+  left: -5px;
+}
+
+     
+}
+@media only screen and  (max-width:550px) {
+  .info{
+     position: relative;
+     bottom:5rem;
+     left: 5%;
+     z-index:1000;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     width:50vh;
+}
+#logout{
+  background-color: #E72150;
+  border:  solid #E72150 ;
+  border-radius: 5px;
+  width:3rem;
+  height: 2rem;
+  z-index:1000;
+}
+.username{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  right:80px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.avatar{
+height: 25px;
+width: 25px;
+position: relative;
+right:10px;
+bottom:55px;
+cursor: pointer;
+z-index: 1000;
+}
+
+}
+@media only screen and  (max-width:480px) {
+.info{
+  position: relative;
+  left: -5px;
+}
+
+}
+@media only screen and  (max-width:450px) {
+  .info{
+     position: relative;
+     bottom:5rem;
+     left: 1%;
+     z-index:1000;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     width:50vh;
+}
+#logout{
+  background-color: #E72150;
+  border:  solid #E72150 ;
+  border-radius: 5px;
+  width:2.5rem;
+  height: 1.5rem;
+  z-index:1000;
+}
+#logout a {
+  font-size: 9px;
+}
+.username{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  right:80px;
+  font-family: 'Roboto', sans-serif;
+}
+#training-btn{
+  background-color: #E72150;
+  color: white;
+  border:  solid #E72150;
+  border-radius: 5px;
+  font-family: 'Quicksand', sans-serif;
+  height: 45px;
+  width: 65%;
+  position: relative;
+  left:45px;
+  bottom:3rem;
+
+}
+.trust-content{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+.elite-coaches{ 
+display: flex;
+flex-direction: column;
+align-items: center;
+position: relative;
+bottom: 5rem;
+left:75px;
+font-size: 15px;
+
+}
+.line{
+ display: none;
+}
+
+.trust-pic{
+  position: relative;
+  left:9rem;
+
+  
+}
+
+.trust-pic p{
+  color: black;
+  font-size:15px;
+  
+  
+}
+.company-info{
+  font-size: 15px;
+}
+
+}
+@media only screen and  (max-width:350px) {
+  .info{
+    
+     bottom:5rem;
+     left: -60px;
+     z-index:1000;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     width:50vh;
+}
+.info h1 {
+  font-size: 8px;
+  position: relative;
+  right: 10px;
+
+
+}
+.info h2 {
+  font-size: 20px;
+ position: relative;
+left:150px;
+}
+.info h3{
+  font-size: 14px;
+  position: relative;
+  right: 15px;
+}
+.info p{
+  font-size:10px;
+  position: relative;
+  right:10px;
+}
+#logout{
+  background-color: #E72150;
+  border:  solid #E72150 ;
+  border-radius: 5px;
+  width:2.5rem;
+  height: 1.5rem;
+  z-index:1000;
+  position: relative;
+  top: 10px;
+}
+#username{
+font-size:10px;
+position: relative;
+left: 10px;
+top: -45px;
+
+}
+.avatar{
+  display: none;
+}
+#training-btn{
+  background-color: #E72150;
+  color: white;
+  border:  solid #E72150;
+  border-radius: 5px;
+  font-family: 'Quicksand', sans-serif;
+  height: 45px;
+  width: 65%;
+  position: relative;
+  left:25px;
+  bottom:3rem;
+
+}
+.trust-content{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+.elite-coaches{ 
+display: flex;
+flex-direction: column;
+align-items: center;
+position: relative;
+bottom: 5rem;
+left:75px;
+font-size: 13px;
+
+}
+.line{
+ display: none;
+}
+.trust-pic p{
+  font-size:10px;
+  position: relative;
+  left: 25px;
+
+}
+.trust-pic{
+  position: relative;
+  left:6rem;
+  
+
+  
+}
+}
+  
